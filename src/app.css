@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: JosefinSans;
+	src: url('/fonts/JosefinSans-Regular.ttf') format('truetype'),
+		url('/fonts/JosefinSans-Regular.woff2') format('woff2'),
+		url('/fonts/JosefinSans-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: Barlow;
+	src: url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+}
+
+html,
+body,
+.app {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+.aos-init:not(.aos-animate):after {
+	position: fixed;
+}
+
+body {
+	font-family: JosefinSans, sans-serif;
+	overflow-x: hidden;
+}
+
+.text-barlow {
+	font-family: Barlow, sans-serif;
+}
+
+.logoname__nletter {
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.card {
+	@apply rounded-2xl flex flex-col relative;
+}
+
+.card__body {
+	@apply flex flex-auto flex-col p-8 gap-2;
+}
+
+
+#style-3::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #112d4480;
+	border-start-end-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#style-3::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+	border-start-end-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+	background-color: #005aa3c1;
+	border-start-end-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+:root {
+	--bg-color: #F3F5F7;
+	--font-color: #112D44;
+	--active-bg-color: #112D44;
+	--active-font-color: #F3F5F7;
+}
+
+/* Svelte Select Customization */
+.selectContainer .item {
+	text-transform: capitalize;
+}
+
+.selectContainer ::-webkit-scrollbar {
+	width: 6px;
+}
+
+.selectContainer ::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.selectContainer ::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.selectContainer .item.hover:hover,
+.selectContainer .item.hover {
+	background-color: var(--active-bg-color) !important;
+	color: var(--active-font-color) !important;
+	cursor: pointer !important;
+}
+
+.selectContainer .item {
+	background-color: var(--bg-color) !important;
+	color: var(--font-color) !important;
+}
+
+.selectContainer .item.active,
+.selectContainer .item.active.hover:hover {
+	background-color: var(--active-bg-color) !important;
+	color: var(--active-font-color) !important;
+}

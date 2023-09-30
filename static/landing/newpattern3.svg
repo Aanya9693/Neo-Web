@@ -1,0 +1,10 @@
+<svg width="80" height="100" viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.15">
+<path d="M100 10V40L75 25V-5L100 10Z" fill="#06E7ED"/>
+<path d="M100 70V40L75 55V85L100 70Z" fill="#06E7ED"/>
+<path d="M25 85L50 70L75 85L50 100L25 85Z" fill="#06E7ED"/>
+<path d="M0 70V40L25 55V85L0 70Z" fill="#06E7ED"/>
+<path d="M0 10V40L25 25V-5L0 10Z" fill="#06E7ED"/>
+<path d="M25 -5L50 10L75 -5L50 -20L25 -5Z" fill="#06E7ED"/>
+</g>
+</svg>

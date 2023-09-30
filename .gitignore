@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+!.env.example
+*.lock
+*.vercel
+pnpm-lock.yaml
+# Sentry Auth Token
+.sentryclirc
+# package-lock.json
